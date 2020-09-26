@@ -32,5 +32,15 @@ class FirstVC: UIViewController {
         print("viewWillAppear")
     }
 
+    @IBAction func segueToDetailVC(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "FirstVCToDetailVC", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let vc: DetailVC? = segue.destination as? DetailVC
+        vc?.view.backgroundColor = .red
+        vc?.label.text = "Rodaaa!!"
+    }
+    
 }
 

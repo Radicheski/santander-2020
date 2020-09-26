@@ -14,6 +14,8 @@
 		AD01A728251C03F100FAD622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD01A727251C03F100FAD622 /* Assets.xcassets */; };
 		AD01A72B251C03F100FAD622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD01A729251C03F100FAD622 /* LaunchScreen.storyboard */; };
 		AD01A73A251C118F00FAD622 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD01A739251C118F00FAD622 /* SecondVC.swift */; };
+		AD127697251EB1980090136F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD127696251EB1980090136F /* DetailVC.swift */; };
+		AD9161E9251EB8D800C5CBBF /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9161E8251EB8D800C5CBBF /* Segue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		AD01A72A251C03F100FAD622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD01A72C251C03F100FAD622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD01A739251C118F00FAD622 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		AD127696251EB1980090136F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
+		AD9161E8251EB8D800C5CBBF /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 			children = (
 				AD01A722251C03F000FAD622 /* FirstVC.swift */,
 				AD01A739251C118F00FAD622 /* SecondVC.swift */,
+				AD127696251EB1980090136F /* DetailVC.swift */,
+				AD9161E8251EB8D800C5CBBF /* Segue.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -148,6 +154,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD127697251EB1980090136F /* DetailVC.swift in Sources */,
+				AD9161E9251EB8D800C5CBBF /* Segue.swift in Sources */,
 				AD01A723251C03F000FAD622 /* FirstVC.swift in Sources */,
 				AD01A71F251C03F000FAD622 /* AppDelegate.swift in Sources */,
 				AD01A73A251C118F00FAD622 /* SecondVC.swift in Sources */,
@@ -301,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S85L3BQN65;
 				INFOPLIST_FILE = TransicaoTela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -320,6 +329,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S85L3BQN65;
 				INFOPLIST_FILE = TransicaoTela/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
