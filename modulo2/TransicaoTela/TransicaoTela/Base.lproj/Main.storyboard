@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -20,7 +21,16 @@
                                 <rect key="frame" x="188" y="438" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
-                                    <action selector="segueToDetailVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5ry-Xv-3um"/>
+                                    <action selector="segueToDetailVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="snw-Nj-y7K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ETx-UH-CtU">
+                                <rect key="frame" x="176" y="360" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Cadastro"/>
+                                <connections>
+                                    <action selector="segueToDetailVC:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AMk-5B-jTQ"/>
+                                    <action selector="signupForm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTH-up-XSk"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -32,7 +42,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="x40-o5-tO4" kind="presentation" identifier="FirstVCToDetailVC" id="Zts-iP-uS5"/>
+                        <segue destination="yEo-Fu-TXe" kind="presentation" identifier="SegueToDetailVC" id="rQx-FN-Pyb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -67,35 +77,13 @@
             </objects>
             <point key="canvasLocation" x="990" y="821"/>
         </scene>
-        <!--DetailVC-->
-        <scene sceneID="8eX-BY-MoL">
+        <!--Detail-->
+        <scene sceneID="zI0-Oo-LpB">
             <objects>
-                <viewController id="x40-o5-tO4" customClass="DetailVC" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Hju-FQ-aZl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPm-NJ-x87">
-                                <rect key="frame" x="186" y="393.5" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="UTW-YQ-cAa"/>
-                        <color key="backgroundColor" systemColor="systemYellowColor"/>
-                        <constraints>
-                            <constraint firstItem="sPm-NJ-x87" firstAttribute="centerX" secondItem="UTW-YQ-cAa" secondAttribute="centerX" id="2GJ-co-sst"/>
-                            <constraint firstItem="sPm-NJ-x87" firstAttribute="centerY" secondItem="UTW-YQ-cAa" secondAttribute="centerY" id="stT-JT-piV"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="label" destination="sPm-NJ-x87" id="5so-p4-4KG"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="miD-yJ-YkH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Detail" id="yEo-Fu-TXe" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4EJ-H2-maJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="964" y="94"/>
+            <point key="canvasLocation" x="916" y="70"/>
         </scene>
     </scenes>
     <resources>
@@ -104,9 +92,6 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemYellowColor">
-            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

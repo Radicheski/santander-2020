@@ -14,8 +14,10 @@
 		AD01A728251C03F100FAD622 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD01A727251C03F100FAD622 /* Assets.xcassets */; };
 		AD01A72B251C03F100FAD622 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD01A729251C03F100FAD622 /* LaunchScreen.storyboard */; };
 		AD01A73A251C118F00FAD622 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD01A739251C118F00FAD622 /* SecondVC.swift */; };
-		AD127697251EB1980090136F /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD127696251EB1980090136F /* DetailVC.swift */; };
 		AD9161E9251EB8D800C5CBBF /* Segue.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9161E8251EB8D800C5CBBF /* Segue.swift */; };
+		ADDD0CA725229A96009A84FB /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADDD0CA625229A96009A84FB /* Detail.storyboard */; };
+		ADDD0CAF2522A26D009A84FB /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD0CAE2522A26D009A84FB /* UserViewController.swift */; };
+		ADDD0CB22522A283009A84FB /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADDD0CB12522A283009A84FB /* AddressViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +30,10 @@
 		AD01A72A251C03F100FAD622 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD01A72C251C03F100FAD622 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD01A739251C118F00FAD622 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
-		AD127696251EB1980090136F /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 		AD9161E8251EB8D800C5CBBF /* Segue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segue.swift; sourceTree = "<group>"; };
+		ADDD0CA625229A96009A84FB /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		ADDD0CAE2522A26D009A84FB /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		ADDD0CB12522A283009A84FB /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,9 @@
 		AD01A71D251C03F000FAD622 /* TransicaoTela */ = {
 			isa = PBXGroup;
 			children = (
+				ADDD0CA625229A96009A84FB /* Detail.storyboard */,
+				ADDD0CB12522A283009A84FB /* AddressViewController.swift */,
+				ADDD0CAE2522A26D009A84FB /* UserViewController.swift */,
 				AD01A73C251C140E00FAD622 /* View */,
 				AD01A71E251C03F000FAD622 /* AppDelegate.swift */,
 				AD01A720251C03F000FAD622 /* SceneDelegate.swift */,
@@ -78,7 +85,6 @@
 			children = (
 				AD01A722251C03F000FAD622 /* FirstVC.swift */,
 				AD01A739251C118F00FAD622 /* SecondVC.swift */,
-				AD127696251EB1980090136F /* DetailVC.swift */,
 				AD9161E8251EB8D800C5CBBF /* Segue.swift */,
 			);
 			path = View;
@@ -144,6 +150,7 @@
 				AD01A72B251C03F100FAD622 /* LaunchScreen.storyboard in Resources */,
 				AD01A728251C03F100FAD622 /* Assets.xcassets in Resources */,
 				AD01A726251C03F000FAD622 /* Main.storyboard in Resources */,
+				ADDD0CA725229A96009A84FB /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,8 +161,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD127697251EB1980090136F /* DetailVC.swift in Sources */,
+				ADDD0CAF2522A26D009A84FB /* UserViewController.swift in Sources */,
 				AD9161E9251EB8D800C5CBBF /* Segue.swift in Sources */,
+				ADDD0CB22522A283009A84FB /* AddressViewController.swift in Sources */,
 				AD01A723251C03F000FAD622 /* FirstVC.swift in Sources */,
 				AD01A71F251C03F000FAD622 /* AppDelegate.swift in Sources */,
 				AD01A73A251C118F00FAD622 /* SecondVC.swift in Sources */,

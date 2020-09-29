@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QXJ-wR-JcI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--User View Controller-->
+        <scene sceneID="uSl-c0-J2g">
+            <objects>
+                <viewController id="QXJ-wR-JcI" customClass="UserViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iid-IQ-SVJ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Yzs-wD-iMp">
+                                <rect key="frame" x="10" y="54" width="394" height="206"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nome" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DxR-J7-TDm">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CPF" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="byb-fg-qlF">
+                                        <rect key="frame" x="0.0" y="44" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="L76-mm-739">
+                                        <rect key="frame" x="0.0" y="88" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Data de nascimento" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DQh-AH-9Mj">
+                                        <rect key="frame" x="0.0" y="132" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kMO-mo-pjq">
+                                        <rect key="frame" x="0.0" y="176" width="394" height="30"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <state key="normal" title="Cadstrar endereço">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="adressScreen:" destination="QXJ-wR-JcI" eventType="touchUpInside" id="dTk-Le-QRn"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="byb-fg-qlF" firstAttribute="centerX" secondItem="Yzs-wD-iMp" secondAttribute="centerX" id="93k-rV-hiT"/>
+                                    <constraint firstItem="DxR-J7-TDm" firstAttribute="leading" secondItem="Yzs-wD-iMp" secondAttribute="leading" id="COz-xc-s1f"/>
+                                    <constraint firstItem="DxR-J7-TDm" firstAttribute="centerX" secondItem="Yzs-wD-iMp" secondAttribute="centerX" id="G3x-wX-zSE"/>
+                                    <constraint firstItem="kMO-mo-pjq" firstAttribute="centerX" secondItem="Yzs-wD-iMp" secondAttribute="centerX" id="PUn-r4-vQK"/>
+                                    <constraint firstItem="L76-mm-739" firstAttribute="leading" secondItem="Yzs-wD-iMp" secondAttribute="leading" id="SOf-MJ-VJj"/>
+                                    <constraint firstItem="L76-mm-739" firstAttribute="centerX" secondItem="Yzs-wD-iMp" secondAttribute="centerX" id="Skd-NT-qYQ"/>
+                                    <constraint firstItem="byb-fg-qlF" firstAttribute="leading" secondItem="Yzs-wD-iMp" secondAttribute="leading" id="hXz-oY-vxc"/>
+                                    <constraint firstItem="kMO-mo-pjq" firstAttribute="leading" secondItem="Yzs-wD-iMp" secondAttribute="leading" id="imG-zF-Ox6"/>
+                                    <constraint firstItem="DQh-AH-9Mj" firstAttribute="centerX" secondItem="Yzs-wD-iMp" secondAttribute="centerX" id="lqv-Cm-N3f"/>
+                                    <constraint firstItem="DQh-AH-9Mj" firstAttribute="leading" secondItem="Yzs-wD-iMp" secondAttribute="leading" id="yru-j9-454"/>
+                                </constraints>
+                            </stackView>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nXE-oy-Rjx">
+                                <rect key="frame" x="10" y="270" width="394" height="210"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oSN-0V-rVD">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4Ju-vq-rtu">
+                                        <rect key="frame" x="0.0" y="44" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vkX-kU-Gnn">
+                                        <rect key="frame" x="0.0" y="88" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j6z-TV-8Rv">
+                                        <rect key="frame" x="0.0" y="132" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XLY-ek-smk">
+                                        <rect key="frame" x="0.0" y="176" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="vkX-kU-Gnn" firstAttribute="centerX" secondItem="nXE-oy-Rjx" secondAttribute="centerX" id="0SX-5C-fxa"/>
+                                    <constraint firstItem="4Ju-vq-rtu" firstAttribute="leading" secondItem="nXE-oy-Rjx" secondAttribute="leading" id="9br-fo-vfp"/>
+                                    <constraint firstItem="XLY-ek-smk" firstAttribute="leading" secondItem="nXE-oy-Rjx" secondAttribute="leading" id="Aym-FT-6gW"/>
+                                    <constraint firstItem="vkX-kU-Gnn" firstAttribute="leading" secondItem="nXE-oy-Rjx" secondAttribute="leading" id="OOZ-T4-MHD"/>
+                                    <constraint firstItem="j6z-TV-8Rv" firstAttribute="leading" secondItem="nXE-oy-Rjx" secondAttribute="leading" id="Pbj-H9-zie"/>
+                                    <constraint firstItem="oSN-0V-rVD" firstAttribute="centerX" secondItem="nXE-oy-Rjx" secondAttribute="centerX" id="UPF-RS-0Vc"/>
+                                    <constraint firstItem="XLY-ek-smk" firstAttribute="centerX" secondItem="nXE-oy-Rjx" secondAttribute="centerX" id="WtN-ww-ZvA"/>
+                                    <constraint firstItem="j6z-TV-8Rv" firstAttribute="centerX" secondItem="nXE-oy-Rjx" secondAttribute="centerX" id="ciL-74-ZwF"/>
+                                    <constraint firstItem="4Ju-vq-rtu" firstAttribute="centerX" secondItem="nXE-oy-Rjx" secondAttribute="centerX" id="gt2-ga-CHd"/>
+                                    <constraint firstItem="oSN-0V-rVD" firstAttribute="leading" secondItem="nXE-oy-Rjx" secondAttribute="leading" id="neR-82-gED"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Ty-Cc-Hm9"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="nXE-oy-Rjx" firstAttribute="centerX" secondItem="7Ty-Cc-Hm9" secondAttribute="centerX" id="70E-9M-ZKT"/>
+                            <constraint firstItem="Yzs-wD-iMp" firstAttribute="top" secondItem="7Ty-Cc-Hm9" secondAttribute="top" constant="10" id="7Pn-I0-5TL"/>
+                            <constraint firstItem="nXE-oy-Rjx" firstAttribute="leading" secondItem="7Ty-Cc-Hm9" secondAttribute="leading" constant="10" id="8Te-9r-YEM"/>
+                            <constraint firstItem="nXE-oy-Rjx" firstAttribute="top" secondItem="Yzs-wD-iMp" secondAttribute="bottom" constant="10" id="DS8-Og-gnF"/>
+                            <constraint firstItem="Yzs-wD-iMp" firstAttribute="leading" secondItem="7Ty-Cc-Hm9" secondAttribute="leading" constant="10" id="NFp-85-g15"/>
+                            <constraint firstItem="Yzs-wD-iMp" firstAttribute="centerX" secondItem="7Ty-Cc-Hm9" secondAttribute="centerX" id="SJ4-TM-5DX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressButton" destination="kMO-mo-pjq" id="GgG-il-SKP"/>
+                        <outlet property="addressInput" destination="oSN-0V-rVD" id="L4W-s7-42a"/>
+                        <outlet property="addressStack" destination="nXE-oy-Rjx" id="rX0-cn-bfU"/>
+                        <outlet property="birthInput" destination="DQh-AH-9Mj" id="iWK-C0-xdG"/>
+                        <outlet property="cityInput" destination="j6z-TV-8Rv" id="egd-vi-q76"/>
+                        <outlet property="cpfInput" destination="byb-fg-qlF" id="e5V-xG-ukf"/>
+                        <outlet property="emailInput" destination="L76-mm-739" id="Hgz-ii-7cF"/>
+                        <outlet property="nameInput" destination="DxR-J7-TDm" id="x4Y-GV-adJ"/>
+                        <outlet property="neighborhoodInput" destination="vkX-kU-Gnn" id="Ezj-WF-vfh"/>
+                        <outlet property="numberInput" destination="4Ju-vq-rtu" id="Ufv-rr-4z3"/>
+                        <outlet property="stateInput" destination="XLY-ek-smk" id="Vfk-e4-s5J"/>
+                        <segue destination="uhD-Ny-5c8" kind="presentation" identifier="UserToAdress" id="d3f-ge-1Mo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twk-0g-859" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="94"/>
+        </scene>
+        <!--Address View Controller-->
+        <scene sceneID="fw0-QI-f3J">
+            <objects>
+                <viewController id="uhD-Ny-5c8" customClass="AddressViewController" customModule="TransicaoTela" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SqU-1Y-I5S">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qoh-42-zjP">
+                                <rect key="frame" x="10" y="10" width="394" height="210"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Endereço" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rfd-Ad-Awl">
+                                        <rect key="frame" x="0.0" y="0.0" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PDl-2f-XSc">
+                                        <rect key="frame" x="0.0" y="44" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bairro" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eVH-Nh-gkj">
+                                        <rect key="frame" x="0.0" y="88" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cidade" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHH-fD-GPr">
+                                        <rect key="frame" x="0.0" y="132" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Estado" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hoz-2Y-nXK">
+                                        <rect key="frame" x="0.0" y="176" width="394" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WHH-fD-GPr" firstAttribute="centerX" secondItem="qoh-42-zjP" secondAttribute="centerX" id="6Yb-eM-1Ic"/>
+                                    <constraint firstItem="rfd-Ad-Awl" firstAttribute="leading" secondItem="qoh-42-zjP" secondAttribute="leading" id="Bf0-jk-paP"/>
+                                    <constraint firstItem="Hoz-2Y-nXK" firstAttribute="leading" secondItem="qoh-42-zjP" secondAttribute="leading" id="Fei-to-9r8"/>
+                                    <constraint firstItem="rfd-Ad-Awl" firstAttribute="centerX" secondItem="qoh-42-zjP" secondAttribute="centerX" id="cEt-Ft-mCA"/>
+                                    <constraint firstItem="eVH-Nh-gkj" firstAttribute="centerX" secondItem="qoh-42-zjP" secondAttribute="centerX" id="gH8-cr-KCm"/>
+                                    <constraint firstItem="Hoz-2Y-nXK" firstAttribute="centerX" secondItem="qoh-42-zjP" secondAttribute="centerX" id="kfV-4D-QUz"/>
+                                    <constraint firstItem="eVH-Nh-gkj" firstAttribute="leading" secondItem="qoh-42-zjP" secondAttribute="leading" id="krW-Ds-if6"/>
+                                    <constraint firstItem="PDl-2f-XSc" firstAttribute="leading" secondItem="qoh-42-zjP" secondAttribute="leading" id="qrZ-vq-Mym"/>
+                                    <constraint firstItem="WHH-fD-GPr" firstAttribute="leading" secondItem="qoh-42-zjP" secondAttribute="leading" id="tEl-ng-mgO"/>
+                                    <constraint firstItem="PDl-2f-XSc" firstAttribute="centerX" secondItem="qoh-42-zjP" secondAttribute="centerX" id="vfk-tU-eGL"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ANc-ww-TYt"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="qoh-42-zjP" firstAttribute="centerX" secondItem="ANc-ww-TYt" secondAttribute="centerX" id="I0u-wa-cNm"/>
+                            <constraint firstItem="qoh-42-zjP" firstAttribute="top" secondItem="ANc-ww-TYt" secondAttribute="top" constant="10" id="Lky-B1-OlN"/>
+                            <constraint firstItem="qoh-42-zjP" firstAttribute="leading" secondItem="ANc-ww-TYt" secondAttribute="leading" constant="10" id="nsP-3M-Ot8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressInput" destination="rfd-Ad-Awl" id="svm-vX-gR3"/>
+                        <outlet property="cityInput" destination="WHH-fD-GPr" id="F7Y-ws-H9Y"/>
+                        <outlet property="neighborhoodInput" destination="eVH-Nh-gkj" id="4Os-3s-xIV"/>
+                        <outlet property="numberInput" destination="PDl-2f-XSc" id="7Nd-ED-xOM"/>
+                        <outlet property="stateInput" destination="Hoz-2Y-nXK" id="LBo-Pe-w6h"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuF-9t-8gf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1672" y="94"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -33,13 +33,17 @@ class FirstVC: UIViewController {
     }
 
     @IBAction func segueToDetailVC(_ sender: UIButton) {
-        self.performSegue(withIdentifier: "FirstVCToDetailVC", sender: nil)
+//        self.performSegue(withIdentifier: "SegueToDetailVC", sender: "Rodaaa!!")
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let vc: DetailVC? = segue.destination as? DetailVC
-        vc?.view.backgroundColor = .red
-        vc?.label.text = "Rodaaa!!"
+//        let vc: DetailVC? = segue.destination as? DetailVC
+//        vc?.view.backgroundColor = .red
+//        vc?.label.text = sender as? String
+    }
+    
+    @IBAction func signupForm(_ sender: UIButton) {
+        self.performSegue(withIdentifier: "SegueToDetailVC", sender: "Rodaaa!!")
     }
     
 }
